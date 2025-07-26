@@ -1,10 +1,10 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
   background-color: #ffffff;
 }
+
 header {
   background-color: #003366;
   color: white;
@@ -12,40 +12,62 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0; /* elimina cualquier margen extra */
 }
+
 header img {
   height: 50px;
 }
+
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
+
 nav a:hover {
-  color: #ffcc00;
+  color: #FFD700;
+  transform: scale(1.05);
 }
+
+/* --- HERO --- */
 .hero {
   background-color: #003366;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 30px 15px; /* REDUCIDO para menos espacio */
+  margin: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease-out forwards;
 }
+
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin: 10px 0;
 }
+
+.hero p {
+  margin: 0;
+}
+
+/* --- SECTIONS --- */
 .section {
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
 }
+
+/* --- PRODUCTOS --- */
 .productos {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
+
 .producto {
   background-color: #f4f4f4;
   border-radius: 10px;
@@ -54,20 +76,11 @@ nav a:hover {
   text-align: center;
   border-top: 5px solid #003366;
 }
+
 .producto:nth-child(2) { border-top-color: #ff6600; }
 .producto:nth-child(3) { border-top-color: #339933; }
-/* --- Hero Animado --- */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #003366; /* o el color que ya usas */
-  color: white;
-  opacity: 0; /* inicio invisible */
-  transform: translateY(30px); /* pequeño desplazamiento */
-  animation: fadeSlideIn 1s ease-out forwards; /* animación */
-}
 
-/* --- Keyframes para animación --- */
+/* --- ANIMACIÓN HERO --- */
 @keyframes fadeSlideIn {
   to {
     opacity: 1;
@@ -75,19 +88,7 @@ nav a:hover {
   }
 }
 
-/* --- Hover suave en el menú --- */
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-nav a:hover {
-  color: #FFD700; /* un dorado o color llamativo */
-  transform: scale(1.05);
-}
+/* --- FOOTER --- */
 footer {
   background-color: #003366;
   color: white;
@@ -95,6 +96,8 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
+
+/* --- CONTACTO --- */
 #contacto {
   text-align: left;
   max-width: 600px;
@@ -128,4 +131,21 @@ footer {
 
 .contact-card a:hover {
   text-decoration: underline;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  nav a {
+    margin: 5px;
+  }
+  .hero {
+    padding: 20px 10px; /* menos espacio en móvil */
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
 }
