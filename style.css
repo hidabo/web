@@ -56,6 +56,38 @@ nav a:hover {
 }
 .producto:nth-child(2) { border-top-color: #ff6600; }
 .producto:nth-child(3) { border-top-color: #339933; }
+/* --- Hero Animado --- */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #003366; /* o el color que ya usas */
+  color: white;
+  opacity: 0; /* inicio invisible */
+  transform: translateY(30px); /* pequeño desplazamiento */
+  animation: fadeSlideIn 1s ease-out forwards; /* animación */
+}
+
+/* --- Keyframes para animación --- */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Hover suave en el menú --- */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #FFD700; /* un dorado o color llamativo */
+  transform: scale(1.05);
+}
 footer {
   background-color: #003366;
   color: white;
