@@ -63,3 +63,37 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
+#contacto {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#contacto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.contact-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
