@@ -79,6 +79,7 @@ nav a:hover {
 
 .producto:nth-child(2) { border-top-color: #ff6600; }
 .producto:nth-child(3) { border-top-color: #339933; }
+.producto:nth-child(4) { border-top-color: #FFD966; } /* Gestión Logística */
 
 /* --- ANIMACIÓN HERO --- */
 @keyframes fadeSlideIn {
