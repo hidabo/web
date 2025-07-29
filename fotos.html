@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HIDABO - Fotos</title>
+  <title>HIDABO - Academia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,32 +12,62 @@
     <nav>
       <a href="index.html#quienes">Quiénes Somos</a>
       <a href="index.html#productos">Productos</a>
-      <a href="fotos.html">Fotos</a>
+      <a href="fotos.html">Academia Hidabo</a>
       <a href="index.html#contacto">Contacto</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Galería de Fotos</h1>
-    <p>Conocé más sobre nuestras actividades y productos.</p>
+    <h1>Academia Hidabo</h1>
+    <p>Consejos, cuidados, optimización y soluciones a problemas frecuentes.</p>
   </section>
 
-  <section id="galeria" class="section">
-    <div class="gallery">
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/500/300?image=1069" alt="Planta de producción">
-        <figcaption>Nuestra planta en plena producción.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/500/300?image=823" alt="Suplementos minerales">
-        <figcaption>Suplementos minerales listos para envío.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/500/300?image=1025" alt="Ganado">
-        <figcaption>Ganado recibiendo nuestros productos.</figcaption>
-      </figure>
+  <section id="academia" class="section">
+    <div class="academia">
+      <div class="card">
+        <img src="https://picsum.photos/400/250?image=1050" alt="Nutrición">
+        <h3>Consejos de Nutrición</h3>
+        <p>Ideas básicas para mejorar la dieta del rodeo.</p>
+        <button class="toggle-btn">Leer más</button>
+        <div class="extra-content">
+          <p>Aquí podrán encontrarse recomendaciones sobre minerales esenciales, formas de suministro y evaluación de resultados.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?image=1060" alt="Productores">
+        <h3>Academia para Productores</h3>
+        <p>Estrategias prácticas para el día a día.</p>
+        <button class="toggle-btn">Leer más</button>
+        <div class="extra-content">
+          <p>Desde el manejo de rodeos hasta el uso de herramientas tecnológicas, este espacio brinda información pensada para el productor.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?image=1070" alt="Cría eficiente">
+        <h3>Claves para la Cría Eficiente</h3>
+        <p>Buenas prácticas para optimizar resultados.</p>
+        <button class="toggle-btn">Leer más</button>
+        <div class="extra-content">
+          <p>Sección dedicada a resolver dudas frecuentes y repasar cómo aprovechar al máximo los recursos disponibles.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+          btn.textContent = 'Leer más';
+        } else {
+          content.style.display = 'block';
+          btn.textContent = 'Cerrar';
+        }
+      });
+    });
+  </script>
 
   <footer>
     &copy; 2025 HIDABO S.R.L. - Todos los derechos reservados.
