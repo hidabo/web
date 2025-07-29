@@ -60,6 +60,25 @@ nav a:hover {
   margin: auto;
 }
 
+/* Ajustes de espacio entre "Quiénes Somos" y "Nuestros Productos" */
+#quienes {
+  padding-bottom: 20px;
+}
+
+#productos {
+  padding-top: 20px;
+}
+
+/* --- QUIENES SOMOS BLOCK --- */
+.quienes-block {
+  background: #f9f9f9;
+  border-left: 5px solid #003366;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
 /* --- PRODUCTOS --- */
 .productos {
   display: flex;
