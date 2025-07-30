@@ -32,6 +32,18 @@
       <p><strong>Trabajamos codo a codo con los productores</strong>, ofreciendo asesoría técnica, atención personalizada y logística propia para garantizar que cada solución llegue a tiempo y en forma.</p>
       <p>Nuestra filosofía de crecimiento siempre fue simple: <strong>Cumplir con el productor.</strong></p>
     </div>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <img src="img/foto1.jpeg" alt="HIDABO 1">
+        <img src="img/foto2.jpeg" alt="HIDABO 2">
+        <img src="img/foto3.jpeg" alt="HIDABO 3">
+        <img src="img/foto4.jpeg" alt="HIDABO 4">
+        <img src="img/foto5.jpeg" alt="HIDABO 5">
+        <img src="img/foto6.jpeg" alt="HIDABO 6">
+        <img src="img/foto7.jpeg" alt="HIDABO 7">
+        <img src="img/foto8.jpeg" alt="HIDABO 8">
+      </div>
+    </div>
   </section>
 
   <section id="productos" class="section">
@@ -75,5 +87,18 @@
   <footer>
     &copy; 2025 HIDABO S.R.L. - Todos los derechos reservados.
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const track = document.querySelector("#quienes .carousel-inner");
+      const imgs = document.querySelectorAll("#quienes .carousel-inner img");
+      let current = 0;
+      if (imgs.length > 0 && track) {
+        setInterval(function() {
+          current = (current + 1) % imgs.length;
+          track.style.transform = `translateX(-${current * 100}%)`;
+        }, 2000);
+      }
+    });
+  </script>
 </body>
 </html>

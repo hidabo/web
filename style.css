@@ -251,3 +251,25 @@ footer {
   display: none;
   margin: 0 15px 15px;
 }
+/* --- CAROUSEL --- */
+.carousel {
+  position: relative;
+  max-width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
