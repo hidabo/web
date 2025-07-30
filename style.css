@@ -233,6 +233,12 @@ footer {
   color: #003366;
 }
 
+.subtitulo {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #555;
+}
+
 .card p {
   margin: 0 15px 15px;
 }
