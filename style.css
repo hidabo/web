@@ -262,8 +262,8 @@ footer {
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  aspect-ratio: 4/3;       /* altura automática según el ancho */
+  max-width: 600px;
+  aspect-ratio: 16/9;       /* altura automática según el ancho */
   margin: 20px auto;
   overflow: hidden;
   border: 5px solid #003366;
