@@ -32,16 +32,7 @@
       <p><strong>Trabajamos codo a codo con los productores</strong>, ofreciendo asesoría técnica, atención personalizada y logística propia para garantizar que cada solución llegue a tiempo y en forma.</p>
       <p>Nuestra filosofía de crecimiento siempre fue simple: <strong>Cumplir con el productor.</strong></p>
     </div>
-    <div class="carousel">
-      <img src="img/foto1.jpeg" alt="HIDABO 1" class="carousel-image active">
-      <img src="img/foto2.jpeg" alt="HIDABO 2" class="carousel-image">
-      <img src="img/foto3.jpeg" alt="HIDABO 3" class="carousel-image">
-      <img src="img/foto4.jpeg" alt="HIDABO 4" class="carousel-image">
-      <img src="img/foto5.jpeg" alt="HIDABO 5" class="carousel-image">
-      <img src="img/foto6.jpeg" alt="HIDABO 6" class="carousel-image">
-      <img src="img/foto7.jpeg" alt="HIDABO 7" class="carousel-image">
-      <img src="img/foto8.jpeg" alt="HIDABO 8" class="carousel-image">
-      </div>
+    <div id="carousel-root"></div>
       <div class="academia-cta">
         <a href="fotos.html" class="btn-academia">Ver Academia Hidabo</a>
       </div>
@@ -94,18 +85,6 @@
   <footer>
     &copy; 2025 HIDABO S.R.L. - Todos los derechos reservados.
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const imgs = document.querySelectorAll("#quienes .carousel-image");
-      let current = 0;
-      if (imgs.length > 0) {
-        setInterval(function() {
-          imgs[current].classList.remove("active");
-          current = (current + 1) % imgs.length;
-          imgs[current].classList.add("active");
-        }, 3000);
-      }
-    });
-  </script>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
