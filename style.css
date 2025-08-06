@@ -306,12 +306,17 @@ footer {
   background-color: #e65500;
 }
 
-/* 1. Reduce el espacio entre la sección "Quiénes Somos" y "Academia" */
-#introduccion-academia {
-  padding-top: 0; 
+/* 1. Reduce el espacio DEBAJO de la sección "Quiénes Somos" */
+#quienes {
+  padding-bottom: 10px; /* Podés probar con 0 si lo querés más pegado */
 }
 
-/* 2. Reduce el espacio entre el título y el párrafo de esa misma sección */
+/* 2. Anula el espacio SUPERIOR de la sección "Academia" */
+#introduccion-academia {
+  padding-top: 0;
+}
+
+/* 3. Reduce el espacio entre el título y el párrafo de "Academia" */
 #introduccion-academia h2 {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
