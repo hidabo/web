@@ -17,6 +17,7 @@ header {
 
 header img {
   height: 50px;
+  width: auto;
 }
 
 nav a {
