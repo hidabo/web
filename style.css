@@ -20,6 +20,15 @@ header img {
   width: auto;
 }
 
+.logo-link img {
+    border: none;
+    text-decoration: none;
+}
+
+.logo-link:link, .logo-link:visited {
+    text-decoration: none;
+}
+
 nav a {
   color: white;
   margin: 0 10px;
