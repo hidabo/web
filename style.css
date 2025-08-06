@@ -305,26 +305,6 @@ footer {
   background-color: #e65500;
 }
 
-.logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.logo-text {
-    margin-left: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: white; 
-}
-
-@media (max-width: 768px) {
-    .logo-link {
-        margin-bottom: 10px;
-        justify-content: center;
-    }
-}
-
 #introduccion-academia {
     padding-top: 20px;
     padding-bottom: 20px;
