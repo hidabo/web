@@ -305,3 +305,13 @@ footer {
 .btn-academia:hover {
   background-color: #e65500;
 }
+
+/* 1. Reduce el espacio entre la sección "Quiénes Somos" y "Academia" */
+#introduccion-academia {
+  padding-top: 0; 
+}
+
+/* 2. Reduce el espacio entre el título y el párrafo de esa misma sección */
+#introduccion-academia h2 {
+  margin-bottom: 15px; 
+}
