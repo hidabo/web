@@ -315,3 +315,7 @@ footer {
 #introduccion-academia h2 {
   margin-bottom: 10px;
 }
+
+/* 3. Reduce el espacio DEBAJO de "Academia" */
+#introduccion-academia {
+  padding-bottom: 20px;
