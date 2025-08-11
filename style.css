@@ -1,13 +1,22 @@
+/* Variables de color */
+:root {
+  --color-primario: #003366;
+  --color-secundario: #ff6600;
+  --color-gris-claro: #f4f4f4;
+  --color-gris-suave: #f9f9f9;
+  --color-blanco: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #ffffff;
+  background-color: var(--color-blanco);
 }
 
 header {
-  background-color: #003366;
-  color: white;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +39,7 @@ header img {
 }
 
 nav a {
-  color: white;
+  color: var(--color-blanco);
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
@@ -44,8 +53,8 @@ nav a:hover {
 
 /* --- HERO --- */
 .hero {
-  background-color: #003366;
-  color: white;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
   text-align: center;
   padding: 30px 15px; /* REDUCIDO para menos espacio */
   margin: 0;
@@ -72,8 +81,8 @@ nav a:hover {
 
 /* --- QUIENES SOMOS BLOCK --- */
 .quienes-block {
-  background: #f9f9f9;
-  border-left: 5px solid #003366;
+  background: var(--color-gris-suave);
+  border-left: 5px solid var(--color-primario);
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
@@ -89,15 +98,15 @@ nav a:hover {
 }
 
 .producto {
-  background-color: #f4f4f4;
+  background-color: var(--color-gris-claro);
   border-radius: 10px;
   padding: 20px;
   flex: 1 1 250px;
   text-align: center;
-  border-top: 5px solid #003366;
+  border-top: 5px solid var(--color-primario);
 }
 
-.producto:nth-child(2) { border-top-color: #ff6600; }
+.producto:nth-child(2) { border-top-color: var(--color-secundario); }
 .producto:nth-child(3) { border-top-color: #339933; }
 .producto:nth-child(4) { border-top-color: #FFD966; } /* Gestión Logística */
 
@@ -111,8 +120,8 @@ nav a:hover {
 
 /* --- FOOTER --- */
 footer {
-  background-color: #003366;
-  color: white;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
@@ -132,18 +141,18 @@ footer {
   text-align: center;
 }
 
-.contact-card {
-  background: #f9f9f9;
+  .contact-card {
+  background: var(--color-gris-suave);
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.contact-card h3 {
+  .contact-card h3 {
   margin-bottom: 10px;
-  color: #003366;
-}
+  color: var(--color-primario);
+  }
 
 .contact-card a {
   color: #0066cc;
@@ -179,15 +188,15 @@ footer {
   justify-content: center;
 }
 
-.card {
-  background: #f4f4f4;
+  .card {
+  background: var(--color-gris-claro);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   flex: 1 1 280px;
   display: flex;
   flex-direction: column;
-}
+  }
 
 .card img {
   width: 100%;
@@ -195,10 +204,10 @@ footer {
   object-fit: cover;
 }
 
-.card h3 {
+  .card h3 {
   margin: 15px;
-  color: #003366;
-}
+  color: var(--color-primario);
+  }
 
 .subtitulo {
   margin: 0 15px;
@@ -210,15 +219,15 @@ footer {
   margin: 0 15px 15px;
 }
 
-.toggle-btn {
-  background: #003366;
-  color: #fff;
+  .toggle-btn {
+  background: var(--color-primario);
+  color: var(--color-blanco);
   border: none;
   padding: 10px;
   margin: 0 15px 15px;
   cursor: pointer;
   border-radius: 4px;
-}
+  }
 
 .extra-content {
   display: none;
@@ -231,16 +240,16 @@ footer {
   margin-top: 20px;
 }
 
-.btn-academia {
+  .btn-academia {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff6600;
-  color: #fff;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-}
+  }
 
 .btn-academia:hover {
   background-color: #e65500;
