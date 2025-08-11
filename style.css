@@ -267,38 +267,23 @@ footer {
   margin: 0 15px 15px;
 }
 
-/* --- CTA ACADEMIA --- */
-.academia-cta {
-  text-align: center;
-  margin-top: 20px;
+/* --- CTA CONTACTO --- */
+.cta-contacto-simple-section {
+  text-align: center;
+  padding: 30px 20px;
 }
 
-  .btn-academia {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--color-secundario);
-  color: var(--color-blanco);
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  }
-
-.btn-academia:hover {
-  background-color: #e65500;
+.btn-contacto-simple {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600; /* Color del botón */
+  color: #fff; /* Color del texto */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-/* 1. Reduce el espacio DEBAJO de la sección "Quiénes Somos" */
-#quienes {
-  padding-bottom: 20px; /* Podés probar con 0 si lo querés más pegado */
-}
-
-/* 2. Reduce el espacio entre el título y el párrafo de "Academia" */
-#introduccion-academia h2 {
-  margin-bottom: 10px;
-}
-
-/* 3. Reduce el espacio DEBAJO de "Academia" */
-#introduccion-academia {
-  padding-bottom: 20px;
+.btn-contacto-simple:hover {
+  background-color: #e65500;
 }
