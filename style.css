@@ -89,6 +89,31 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+/* --- CAROUSEL --- */
+.carousel {
+  max-width: 800px;
+  margin: 30px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel img.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* --- PRODUCTOS --- */
 .productos {
   display: flex;
