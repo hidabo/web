@@ -92,16 +92,24 @@ nav a:hover {
 /* --- CAROUSEL --- */
 .carousel {
   max-width: 800px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   margin: 30px auto 0;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-gris-claro);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .carousel img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   display: none;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .carousel img.active {
