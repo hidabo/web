@@ -281,12 +281,29 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.carousel .slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slide 15s infinite;
+}
+
 .carousel img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
+@keyframes slide {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  63% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  96% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
 
 @media (max-width: 768px) {
   .carousel {
@@ -328,3 +345,4 @@ footer {
 /* 3. Reduce el espacio DEBAJO de "Academia" */
 #introduccion-academia {
   padding-bottom: 20px;
+}
