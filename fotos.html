@@ -32,7 +32,7 @@
         <h3>Fósforo local y eficiente</h3>
         <p class="subtitulo">Ceniza de huesos: alternativa al fosfato importado</p>
     
-        <button class="toggle-btn">Ver más</button>
+        <button class="toggle-btn" aria-expanded="false">Ver más</button>
         <div class="extra-content">
           <p>Fuente nacional con alta disponibilidad (≈85% en citrato).Sustituye fosfatos inorgánicos importados sin depender del dólar ni la logística externa.</p>
         </div>
@@ -42,7 +42,7 @@
         <h3>Diagnóstico y consecuencias</h3>
         <p class="subtitulo">La deficiencia de fósforo en el NEA impacta producción</p>
       
-        <button class="toggle-btn">Ver más</button>
+        <button class="toggle-btn" aria-expanded="false">Ver más</button>
         <div class="extra-content">
           <p>Forrajes &lt;0,20 g/100 g MS y fósforo en sangre &lt;2,8 mg/dl generan menor apetito y bajo crecimiento.La suplementación revierte este cuadro y mejora la preñez.</p>
         </div>
@@ -52,7 +52,7 @@
         <h3>Eficiencia reproductiva probada</h3>
         <p class="subtitulo">Suplementar al 9% de fósforo mejora la preñez y ciclicidad</p>
         
-        <button class="toggle-btn">Ver más</button>
+        <button class="toggle-btn" aria-expanded="false">Ver más</button>
         <div class="extra-content">
           <p>Ensayos del INTA muestran 97,2% de preñez y 100% de ciclicidad posservicio.Las vacas suplementadas al 9% superaron a aquellas al 6% en ambos indicadores.</p>
         </div>
@@ -61,7 +61,7 @@
         <img src="fotosacademia/4.png" alt="Novillos en corral, representando el crecimiento y ganancia de peso con la suplementación mineral de fósforo">
         <h3>Más fósforo, más kilos</h3>
         <p class="subtitulo">Mejor crecimiento en novillos suplementados</p>
-        <button class="toggle-btn">Ver más</button>
+        <button class="toggle-btn" aria-expanded="false">Ver más</button>
         <div class="extra-content">
           <p>En dos años, los animales suplementados con mezcla al 6% de fósforo ganaron 68 kg más que los testigos.Clave para mejorar la eficiencia de recría.</p>
         </div>
@@ -70,7 +70,7 @@
         <img src="fotosacademia/5.jpeg" alt="Técnica de laboratorio analizando la calidad de la ceniza de hueso, garantizando suplementos sin riesgos sanitarios">
         <h3>Eficiencia sin riesgos sanitarios</h3>
         <p class="subtitulo">Ceniza y harina: igual disponibilidad, distinta regulación</p>
-        <button class="toggle-btn">Ver más</button>
+        <button class="toggle-btn" aria-expanded="false">Ver más</button>
         <div class="extra-content">
           <p>La calcinación mantiene la hidroxiapatita.La ceniza, autorizada por SENASA, aporta fósforo con alta biodisponibilidad y sin restricciones sanitarias.</p>
         </div>
@@ -79,7 +79,7 @@
         <img src="fotosacademia/6.jpg" alt="Vaca amamantando a su ternero, representando una lactancia saludable gracias a la suplementación con fósforo">
         <h3>Lactancia sin pérdida de estado</h3>
         <p class="subtitulo">El fósforo sostiene la condición y producción láctea</p>
-        <button class="toggle-btn">Ver más</button>
+        <button class="toggle-btn" aria-expanded="false">Ver más</button>
         <div class="extra-content">
           <p>Durante la lactancia, la carencia de fósforo provoca pérdida de peso y menor producción.Suplementar permite sostener el rendimiento de la vaca y su cría.</p>
         </div>
@@ -94,9 +94,11 @@
         if (content.style.display === 'block') {
           content.style.display = 'none';
           btn.textContent = 'Ver m\u00e1s';
+          btn.setAttribute('aria-expanded', 'false');
         } else {
           content.style.display = 'block';
           btn.textContent = 'Cerrar';
+          btn.setAttribute('aria-expanded', 'true');
         }
       });
     });
