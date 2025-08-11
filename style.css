@@ -274,16 +274,16 @@ footer {
 }
 
 .btn-contacto-simple {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff6600; /* Color del botón */
-  color: #fff; /* Color del texto */
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600; /* Color del botón */
+  color: #fff; /* Color del texto */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-contacto-simple:hover {
-  background-color: #e65500;
+  background-color: #e65500;
 }
