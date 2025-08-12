@@ -1,3 +1,2 @@
-node_modules/
-dist/
-.vite
+# Ignore local OS files
+.DS_Store
