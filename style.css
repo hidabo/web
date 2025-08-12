@@ -91,7 +91,7 @@ nav a:hover {
 
 /* --- CAROUSEL --- */
 .carousel {
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   aspect-ratio: 4 / 3;
   margin: 30px auto 0;
