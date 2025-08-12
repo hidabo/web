@@ -89,6 +89,10 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+.quienes-block p {
+  line-height: 1.6;
+}
+
 /* --- CAROUSEL --- */
 .carousel {
   max-width: 600px;
